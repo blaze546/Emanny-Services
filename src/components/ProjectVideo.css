@@ -48,13 +48,28 @@
     border-radius: 8px; /* Optional, if you want rounded corners for videos */
   }
   
-  /* Prevent fullscreen video on mobile */
+  /* For mobile screens, limit the height and prevent fullscreen */
   @media (max-width: 768px) {
-    .video-element {
+    .video-container {
       width: 100%;
-      height: 200px; /* Fix the height of the video on mobile */
+      height: auto;
+    }
+  
+    .video-element {
+      max-height: 200px; /* Fixed height on mobile to prevent full screen */
+      object-fit: contain; /* Make sure the video doesn't stretch */
     }
   }
+  
+  /* Optional: Prevent the video from entering fullscreen automatically */
+  video:-webkit-full-screen {
+    object-fit: contain !important;
+  }
+  
+  video:fullscreen {
+    object-fit: contain !important;
+  }
+  
   
   
   
