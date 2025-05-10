@@ -51,7 +51,7 @@
     }
   }
   
-  /* Optional: Prevent the video from entering fullscreen automatically */
+  /* Prevent fullscreen behavior on mobile */
   video:-webkit-full-screen {
     object-fit: contain !important;
   }

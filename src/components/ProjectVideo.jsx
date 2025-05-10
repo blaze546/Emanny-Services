@@ -12,6 +12,7 @@ const ProjectVideo = ({ src, title }) => {
           autoPlay
           muted
           loop
+          playsInline
           className="video-element"
         />
       </div>
