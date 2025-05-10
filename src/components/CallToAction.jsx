@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './CallToAction.css';
 
 const CallToAction = () => {
   const [isShaking, setIsShaking] = useState(false);
 
   const handleClick = (e) => {
-    e.preventDefault(); // Prevent immediate redirect
+    e.preventDefault();
     setIsShaking(true);
 
     setTimeout(() => {
@@ -15,21 +16,25 @@ const CallToAction = () => {
   };
 
   return (
-    <div className="text-center bg-light py-4">
-      <a href="tel:7818051718" className="btn btn-primary btn-lg mb-2">
-        Call for a Free Estimate
+    <div className="call-to-action text-center d-flex flex-column align-items-center py-4">
+      <a href="/contact" className="btn btn-custom btn-lg mb-3">
+        Schedule a Consultation
       </a>
-      <p className="mb-0 fs-5" onClick={handleClick}>
+      <p className="fw-bold fs-5 mb-2">or click the number below</p>
+      <p className="mb-0 fs-4 phone-number" onClick={handleClick}>
         <span className={isShaking ? 'shake d-inline-block' : 'd-inline-block'}>
-          📞
+        📞
         </span>{" "}
-        (781) 805-1718
+         (781) 805-1718
       </p>
+
     </div>
   );
 };
 
 export default CallToAction;
+
+
 
 
 

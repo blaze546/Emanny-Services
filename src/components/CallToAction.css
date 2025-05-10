@@ -1,0 +1,68 @@
+/* CallToAction.css */
+
+/* Shake animation for the phone icon */
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out; /* Duration should match the timeout */
+  }
+  
+  /* Call to Action section */
+  .call-to-action {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Make the custom gold button more specific */
+  .call-to-action .btn-custom {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #d8a339 !important; /* Gold color */
+    border-color: #d8a339 !important; /* Gold color */
+    color: white !important; /* Ensure the text color is white */
+  }
+  
+  .call-to-action .btn-custom:hover {
+    background-color: #b8860b !important; /* Darker gold on hover */
+    border-color: #b8860b !important; /* Darker gold on hover */
+  }
+  
+  .call-to-action .btn-lg {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+  }
+  
+  /* Phone number text */
+  .call-to-action p {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .phone-number {
+    cursor: pointer;
+    transition: border-bottom 0.2s ease;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .phone-number:hover {
+    border-bottom: 2px solid #d8a339; /* Gold underline on hover */
+  }
+  
