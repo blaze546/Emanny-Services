@@ -34,42 +34,32 @@
     margin-bottom: 20px;
   }
   
-  .video-container {
+  /* Container for the video */
+.video-container {
     position: relative;
     width: 100%;
-    max-width: 800px;  /* Limit max width of the video */
-    margin: 0 auto;
-    overflow: hidden; /* Prevent video from overflowing */
+    max-width: 100%;
+    margin: 0 auto; /* Centers the video */
   }
   
+  /* Styling for the video element */
   .video-element {
-    width: 100%; /* Ensures the video takes the full width of the container */
-    height: auto;
-    border-radius: 8px; /* Optional, if you want rounded corners for videos */
+    width: 100%; /* Ensures the video fits within its container's width */
+    height: auto; /* Adjusts the height to maintain the aspect ratio */
+    object-fit: cover; /* Ensures the video covers the container */
   }
   
-  /* For mobile screens, limit the height and prevent fullscreen */
+  /* For mobile screens */
   @media (max-width: 768px) {
     .video-container {
-      width: 100%;
-      height: auto;
+      width: 100%; /* Ensures the container takes up 100% of the screen width */
+      max-width: 100%; /* Prevents the video from expanding beyond the container */
+      margin: 0 auto; /* Centers the container */
     }
   
     .video-element {
-      max-height: 200px; /* Fixed height on mobile to prevent full screen */
-      object-fit: contain; /* Make sure the video doesn't stretch */
+      width: 100%; /* Makes the video take up full width on mobile */
+      height: auto; /* Ensures proper height scaling */
+      object-fit: contain; /* Ensures the video does not stretch and stays within its container */
     }
   }
-  
-  /* Optional: Prevent the video from entering fullscreen automatically */
-  video:-webkit-full-screen {
-    object-fit: contain !important;
-  }
-  
-  video:fullscreen {
-    object-fit: contain !important;
-  }
-  
-  
-  
-  
