@@ -1,5 +1,5 @@
-/* Styling for the video container */
-.project-video h5 {
+
+  .project-video h5 {
     font-weight: bold;
     color: #3a3a3a;
   }
@@ -16,23 +16,34 @@
     object-fit: cover;
     border-radius: 12px;
   }
+  .custom-gold-btn {
+    background-color: #d8a339;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
   
+  .custom-gold-btn:hover {
+    background-color: #b88a2c;
+    color: #fff;
+  }
   .project-video {
     margin-bottom: 20px;
   }
   
-  /* The video container limits its size and centers the video */
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Limit max width of the video */
+    max-width: 800px;  /* Limit max width of the video */
     margin: 0 auto;
     overflow: hidden; /* Prevent video from overflowing */
   }
   
-  /* Video element styling */
   .video-element {
-    width: 100%; /* Ensure the video takes the full width of the container */
+    width: 100%; /* Ensures the video takes the full width of the container */
     height: auto;
     border-radius: 8px; /* Optional, if you want rounded corners for videos */
   }
@@ -41,17 +52,16 @@
   @media (max-width: 768px) {
     .video-container {
       width: 100%;
-      max-width: 100%; /* Allow full width on mobile */
       height: auto;
     }
   
     .video-element {
-      max-height: 300px; /* Limit height on mobile to prevent full-screen behavior */
-      object-fit: contain; /* Ensures the video does not stretch or overflow */
+      max-height: 200px; /* Fixed height on mobile to prevent full screen */
+      object-fit: contain; /* Make sure the video doesn't stretch */
     }
   }
   
-  /* Prevent fullscreen behavior on mobile */
+  /* Optional: Prevent the video from entering fullscreen automatically */
   video:-webkit-full-screen {
     object-fit: contain !important;
   }
@@ -59,7 +69,6 @@
   video:fullscreen {
     object-fit: contain !important;
   }
-  
   
   
   

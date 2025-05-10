@@ -17,7 +17,7 @@ const CallToAction = () => {
 
   return (
     <div className="call-to-action text-center d-flex flex-column align-items-center py-4">
-      <a href="/contact" className="btn btn-custom btn-lg mb-3">
+      <a href="/Contact" className="btn btn-custom btn-lg mb-3">
         Schedule a Consultation
       </a>
       <p className="fw-bold fs-5 mb-2">or click the number below</p>

@@ -1,12 +1,12 @@
 /* Custom Button Style for Projects Page */
 .custom-btn-primary {
-    background-color: #d8a339; /* New button background color */
-    border-color: #d8a339;    /* New button border color */
+    background-color: #d8a339 !important; /* New button background color */
+    border-color: #d8a339 !important;    /* New button border color */
     transition: all 0.3s ease;
   }
   
   .custom-btn-primary:hover {
-    background-color: #b6892f; /* Darker shade on hover */
-    border-color: #b6892f;    /* Darker border color on hover */
+    background-color: #b6892f !important; /* Darker shade on hover */
+    border-color: #b6892f !important;    /* Darker border color on hover */
   }
   

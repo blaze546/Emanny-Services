@@ -113,6 +113,7 @@
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
+    display: inline-block;
   }
   
   .custom-navbar .custom-link::after {
@@ -122,13 +123,18 @@
     bottom: -4px;
     height: 2px;
     background-color: var(--gold);
-    width: 0;
+    width: 0; /* Start with no width */
     transition: width 0.3s ease-in-out;
   }
   
   .custom-navbar .custom-link:hover::after {
-    width: 100%;
+    width: 100%; /* Underline expands on hover */
   }
+  
+  .custom-navbar .custom-link:hover {
+    color: #b8860b; /* Optionally change the text color on hover */
+  }
+  
   
   .brand-name {
     font-family: 'Arial', sans-serif;
