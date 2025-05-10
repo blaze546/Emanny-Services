@@ -12,7 +12,7 @@ const ProjectVideo = ({ src, title }) => {
           autoPlay
           muted
           loop
-          className="w-100 h-100 object-fit-cover video-element"
+          className="video-element"
         />
       </div>
     </div>
@@ -20,6 +20,7 @@ const ProjectVideo = ({ src, title }) => {
 };
 
 export default ProjectVideo;
+
 
 
 
