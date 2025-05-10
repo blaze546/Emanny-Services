@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProjectVideo.css";
 
 const ProjectVideo = ({ src, title }) => {
   return (

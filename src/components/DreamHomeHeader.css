@@ -1,0 +1,41 @@
+/* Gold text style */
+.text-gold{
+    color: #d8a339;
+  }
+  
+  /* Optional: Add a slide-in animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  /* Optional wrench icon animation */
+  @keyframes wrenchRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-wrench {
+    animation: wrenchRotate 2s infinite;
+    font-size: 2rem;
+    color: #d8a339; /* Gold wrench */
+  }
+  .dream-home-header-container {
+    border-bottom: 4px solid #d8a339;
+    margin-bottom: 2rem;
+  }
+  

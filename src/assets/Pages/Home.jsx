@@ -9,6 +9,7 @@ import HeroSection from '../../components/HeroSection';
 import CallToAction from '../../components/CallToAction';
 import DreamHomeHeader from '../../components/DreamHomeHeader';
 import ProjectVideo from '../../components/ProjectVideo';
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -31,17 +32,18 @@ const Home = () => {
       {/* Testimonials Section */}
       {/* Featured Project Video */}
       <div className="container my-5">
-  <h2 className="text-center mb-4">See How We Work</h2>
-  <ProjectVideo
-    src="/Walk Hill Kitchen slide.mp4"
-    title="Kitchen Renovation"
-  />
-  <div className="text-center mt-3">
-    <Link to="/projects" className="btn btn-outline-primary">
-      View More Projects
-    </Link>
-  </div>
-</div>
+        <h2 className="text-center mb-4 fw-bold display-5">See How We Work</h2>
+        <ProjectVideo
+             src="/Walk Hill Kitchen slide.mp4"
+            title="Kitchen Renovation"
+        />
+
+        <div className="text-center mt-3">
+            <Link to="/projects" className="btn custom-gold-btn">
+            View More Projects
+            </Link>
+        </div>
+    </div>
 
 
       {/* Services Section */}
