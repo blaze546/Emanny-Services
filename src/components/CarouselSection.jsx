@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Carousel } from 'react-bootstrap';
+import './CarouselSection.css';
 
 const CarouselSection = () => {
   return (
