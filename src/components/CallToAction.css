@@ -65,4 +65,11 @@
   .phone-number:hover {
     border-bottom: 2px solid #d8a339; /* Gold underline on hover */
   }
+
+  .arrow-container {
+    font-size: 2rem;
+    color: inherit; /* Allow color to be inherited */
+  }
+  
+
   

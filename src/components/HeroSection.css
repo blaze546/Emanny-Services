@@ -38,3 +38,11 @@
     }
   }
   
+  /* HeroSection.css */
+    .hero-heading {
+    font-weight: bold;
+    border-bottom: 2px solid #d8a339;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  

@@ -21,18 +21,35 @@ const CallToAction = () => {
         Schedule a Consultation
       </a>
       <p className="fw-bold fs-5 mb-2">or click the number below</p>
+      <div className="arrow-container mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#d8a339"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 2v20m0 0l-6-6m6 6l6-6" />
+        </svg>
+      </div>
       <p className="mb-0 fs-4 phone-number" onClick={handleClick}>
         <span className={isShaking ? 'shake d-inline-block' : 'd-inline-block'}>
-        📞
+          📞
         </span>{" "}
-         (781) 805-1718
+        (781) 805-1718
       </p>
-
     </div>
   );
 };
 
 export default CallToAction;
+
+
+
 
 
 

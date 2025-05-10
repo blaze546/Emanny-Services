@@ -11,17 +11,17 @@ const HeroSection = () => {
           className="img-fluid w-100 hero-image"
         />
         <div className="hero-content text-white position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end justify-content-center p-4" style={{ background: 'rgba(0,0,0,0.5)' }}>
-  <div className="text-center">
-    <h1 className="fw-bold display-4">Expert Home Repair Services in Boston</h1>
-    <p className="lead">
-      Bringing precision and craftsmanship to every home improvement project.
-    </p>
-  </div>
-</div>
-
+          <div className="text-center">
+            <h1 className="hero-heading display-4">Expert Home Repair Services in Boston</h1>
+            <p className="lead">
+              Bringing precision and craftsmanship to every home improvement project.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default HeroSection;
+

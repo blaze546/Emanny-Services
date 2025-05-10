@@ -79,13 +79,15 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
-  /* Optional: Add a box shadow to the description section to separate it visually */
-  .text-center .fw-bold {
+  .carousel-heading {
+    font-weight: bold;
     border-bottom: 2px solid #d8a339;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
+  
+  /* Optional: Add a box shadow to the description section to separate it visually */
+  
   
   
   

@@ -16,7 +16,7 @@ const CarouselSection = () => {
               style={{ height: '500px', objectFit: 'cover' }}
             />
             <Carousel.Caption>
-              <h3>Custom Kitchen Cabinets</h3>
+              <h3 className="carousel-caption-heading carousel-heading">Custom Kitchen Cabinets</h3>
               <p>Transform your kitchen with beautiful custom cabinetry built to last.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -29,7 +29,7 @@ const CarouselSection = () => {
               style={{ height: '500px', objectFit: 'cover' }}
             />
             <Carousel.Caption>
-              <h3>Home Renovation</h3>
+              <h3 className="carousel-caption-heading carousel-heading">Home Renovation</h3>
               <p>Modernize your basement with professional renovations that fit your style.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -42,7 +42,7 @@ const CarouselSection = () => {
               style={{ height: '500px', objectFit: 'cover' }}
             />
             <Carousel.Caption>
-              <h3>Window Casing</h3>
+              <h3 className="carousel-caption-heading carousel-heading">Window Casing</h3>
               <p>Elegant and durable window casing solutions to enhance your home's aesthetics.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -55,7 +55,7 @@ const CarouselSection = () => {
               style={{ height: '500px', objectFit: 'cover' }}
             />
             <Carousel.Caption>
-              <h3>Elegant Bathroom Upgrades</h3>
+              <h3 className="carousel-caption-heading carousel-heading">Elegant Bathroom Upgrades</h3>
               <p>Elevate your bathroom with stylish, functional designs built for comfort and luxury.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -63,9 +63,9 @@ const CarouselSection = () => {
 
         {/* Bottom Description */}
         <div className="text-center mt-4">
-          <h4 className="fw-bold text-dark">Our Expertise In Home Repair</h4>
+          <h4 className="fw-bold text-dark carousel-heading">Our Expertise In Home Repair</h4>
           <p className="fs-5 text-muted px-2">
-          With over 7 years of experience, Emanny Services offers bespoke home renovations, and expert carpentry tailored to your vision. From elegant kitchen remodels to complete home transformations, we deliver exceptional craftsmanship, and a seamless client experience.
+            With over 7 years of experience, Emanny Services offers bespoke home renovations, and expert carpentry tailored to your vision. From elegant kitchen remodels to complete home transformations, we deliver exceptional craftsmanship, and a seamless client experience.
           </p>
         </div>
       </Card>
@@ -74,3 +74,4 @@ const CarouselSection = () => {
 };
 
 export default CarouselSection;
+
