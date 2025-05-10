@@ -1,0 +1,19 @@
+/* Gold Heading Style */
+.gold-heading {
+    color: #d8a339; /* Gold color */
+  }
+  
+  /* Gold Button Style */
+  /* Gold Button Style */
+.gold-button {
+    background-color: #d8a339 !important;
+    border-color: #d8a339 !important;
+  }
+  
+  .gold-button:hover {
+    background-color: #b37a26 !important;
+    border-color: #b37a26 !important;
+  }
+  
+  
+  

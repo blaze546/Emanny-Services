@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import './Footer.css'; // Import the custom CSS
 
 const Footer = () => {
   return (
@@ -21,6 +22,9 @@ const Footer = () => {
         </Row>
         <div className="text-center mt-4">
           <p>&copy; {new Date().getFullYear()} Emanny Services. All rights reserved.</p>
+          <p className="site-creator">
+            Created for <a href="https://briandevelops.com" target="_blank" rel="noopener noreferrer">Emanny Services</a> by <a href="https://briandevelops.com" target="_blank" rel="noopener noreferrer">BrianDevelops.com</a>
+          </p>
         </div>
       </Container>
     </footer>
@@ -28,3 +32,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

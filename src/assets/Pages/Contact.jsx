@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import "./Contact.css";
 
 const Contact = () => {
   // State to store form data
@@ -14,14 +15,14 @@ const Contact = () => {
   useEffect(() => {
     const storedName = localStorage.getItem('name');
     const storedEmail = localStorage.getItem('email');
-    
+
     if (storedName) {
       setFormData((prevData) => ({
         ...prevData,
         name: storedName,
       }));
     }
-    
+
     if (storedEmail) {
       setFormData((prevData) => ({
         ...prevData,
@@ -39,12 +40,37 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Optionally, store the name and email in localStorage for future use
-    localStorage.setItem('name', formData.name);
-    localStorage.setItem('email', formData.email);
+
+    // Store the name and email in localStorage for future use
+    if (formData.name && formData.email) {
+      localStorage.setItem('name', formData.name);
+      localStorage.setItem('email', formData.email);
+    }
 
     console.log('Form submitted', formData);
+  };
+
+  // Autofill only when the user focuses on the input field (taps into it)
+  const handleFocus = (e) => {
+    if (e.target.name === 'name' && !formData.name) {
+      const storedName = localStorage.getItem('name');
+      if (storedName) {
+        setFormData((prevData) => ({
+          ...prevData,
+          name: storedName,
+        }));
+      }
+    }
+
+    if (e.target.name === 'email' && !formData.email) {
+      const storedEmail = localStorage.getItem('email');
+      if (storedEmail) {
+        setFormData((prevData) => ({
+          ...prevData,
+          email: storedEmail,
+        }));
+      }
+    }
   };
 
   return (
@@ -72,6 +98,7 @@ const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              onFocus={handleFocus} // Trigger autofill on focus
               placeholder="Enter your name"
               required
               className="form-input"
@@ -87,6 +114,7 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              onFocus={handleFocus} // Trigger autofill on focus
               placeholder="Enter your email"
               required
               className="form-input"
@@ -145,3 +173,11 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
+
+
+

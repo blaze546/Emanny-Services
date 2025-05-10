@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectVideo from "../../components/ProjectVideo";
 import ChainedVideoPlayer from "../../components/ChainedVideoPlayer";
+import './Projects.css'; // Import the custom CSS
 
 const Projects = () => {
   return (
@@ -43,7 +44,7 @@ const Projects = () => {
       <div className="text-center mt-5">
         <a
           href="/schedule-consultation" // Adjust the link as needed
-          className="btn btn-primary btn-lg"
+          className="btn custom-btn-primary btn-lg"
         >
           Schedule a Consultation
         </a>

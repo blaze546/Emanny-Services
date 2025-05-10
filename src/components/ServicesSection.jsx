@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import './ServicesSectionCard.css';
 
 // Image-based service cards
 const services = [
@@ -68,7 +69,7 @@ const ServicesSection = () => {
   return (
     <div className="container my-5">
       {/* Visual Service Cards */}
-      <h2 className="text-center fw-bold mb-4">Services We Provide</h2>
+      <h2 className="text-center fw-bold mb-4 gold-heading">Services We Provide</h2>
       <div className="row mb-5">
         {services.map((service, idx) => (
           <div key={idx} className="col-md-4 mb-4">
@@ -88,7 +89,7 @@ const ServicesSection = () => {
         <div className="row align-items-center">
           <div className="col-md-12">
             <Card className="shadow-lg p-4 mb-4">
-              <h2 className="fw-bold text-primary text-center">Our Services</h2>
+              <h2 className="fw-bold text-center gold-heading">Our Services</h2>
               <p className="fs-5 text-center">
                 Explore the carpentry services we offer, from custom cabinetry to home renovations. We take pride in delivering high-quality craftsmanship tailored to your needs.
               </p>
@@ -102,7 +103,9 @@ const ServicesSection = () => {
               </p>
               <div className="text-center mt-4">
                 <Link to="/contact">
-                  <Button variant="primary" size="lg">Schedule A Consultation</Button>
+                  <Button className="gold-button" size="lg">
+                    Schedule A Consultation
+                  </Button>
                 </Link>
               </div>
             </Card>
@@ -114,3 +117,4 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+

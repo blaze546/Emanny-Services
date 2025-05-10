@@ -1,0 +1,78 @@
+/* Custom Footer Styles */
+.custom-footer {
+    background: linear-gradient(to right, #3a3a3a, #232323);
+    padding: 40px 0;
+    color: #fff;
+  }
+  
+  .custom-footer h5, .custom-footer h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-footer p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+  }
+  
+  .custom-footer a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #d8a339;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .custom-footer .list-unstyled li {
+    margin-bottom: 8px;
+  }
+  
+  .custom-footer .text-center p {
+    font-size: 0.875rem;
+    color: #bbb;
+  }
+  
+  .custom-footer .text-center {
+    margin-top: 20px;
+  }
+  
+  .custom-footer .container {
+    max-width: 1140px;
+  }
+  
+  .custom-footer .social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-footer .social-links a {
+    font-size: 1.2rem;
+  }
+  
+  .custom-footer .site-creator {
+    font-size: 0.875rem;
+    margin-top: 15px;
+    color: #bbb;
+  }
+  
+  .custom-footer .site-creator a {
+    color: #d8a339;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-footer .site-creator a:hover {
+    color: #fff;
+  }
+  
+  
