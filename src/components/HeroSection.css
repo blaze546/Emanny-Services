@@ -1,0 +1,40 @@
+/* Hero Section Styles */
+.hero-wrapper {
+    position: relative;
+    height: auto;
+  }
+  
+  .hero-image {
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 1.75rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero-content {
+      padding: 1rem;
+    }
+  
+    .hero-image {
+      max-height: 300px;
+    }
+  }
+  
