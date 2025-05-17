@@ -17,11 +17,6 @@ const services = [
     image: "/bathroom.jpg",
   },
   {
-    title: "TV Installations",
-    description: "Secure and sleek mounting for TVs and media setups.",
-    image: "/tv.jpg",
-  },
-  {
     title: "Stair Replacement",
     description: "Strong and stylish stair builds to elevate your home.",
     image: "/stairs.jpg",

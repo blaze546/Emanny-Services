@@ -1,0 +1,38 @@
+/* src/components/CallButton.css */
+
+.call-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
+    background-color: #198754; /* Bootstrap success */
+    color: white;
+    border-radius: 50%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: slide-up 1s ease-in-out;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-button:hover {
+    background-color: #146c43;
+  }
+  
+  /* Slide-up animation */
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  

@@ -74,7 +74,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="contact-wrapper mt-5">
       {/* Image Section */}
       <div className="text-center mb-4">
         <img 

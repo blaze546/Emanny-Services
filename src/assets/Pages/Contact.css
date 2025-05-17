@@ -46,4 +46,10 @@
     background-color: #fff;
     border-color: #d8a339;
   }
+  .contact-wrapper {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  
   

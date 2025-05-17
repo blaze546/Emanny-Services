@@ -5,7 +5,7 @@ import './Projects.css'; // Import the custom CSS
 
 const Projects = () => {
   return (
-    <div className="container py-5">
+    <div className="container-fluid py-5">
       <h1 className="mb-2 text-center">See the Work in Action</h1>
       <p className="text-center text-muted mb-4">
         Watch how Emanny Services transforms homes — from start to finish.
@@ -35,7 +35,7 @@ const Projects = () => {
         />
 
         <ProjectVideo
-          src="/Bathroom Install.mp4"
+          src="/Bathroom Installation.mp4"
           title="Bathroom Installation"
         />
       </div>

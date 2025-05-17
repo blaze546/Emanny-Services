@@ -11,6 +11,7 @@ import DreamHomeHeader from '../../components/DreamHomeHeader';
 import ProjectVideo from '../../components/ProjectVideo';
 import "./Home.css";
 
+
 const Home = () => {
   return (
     <div className="container-fluid">
@@ -43,26 +44,14 @@ const Home = () => {
             View More Projects
             </Link>
         </div>
-    </div>
+        </div>
 
 
       {/* Services Section */}
       <ServicesSectionCard />
 
       {/* Floating Phone Button */}
-      <a
-        href="tel:1234567890"
-        className="position-fixed bottom-0 end-0 m-4 bg-success text-white rounded-circle d-flex justify-content-center align-items-center"
-        style={{
-          width: '60px',
-          height: '60px',
-          zIndex: 9999,
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
-        }}
-        title="Call Emanny Services"
-      >
-        <FaWrench size={28} />
-      </a>
+    
     </div>
   );
 };
