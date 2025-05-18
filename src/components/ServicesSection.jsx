@@ -69,7 +69,12 @@ const ServicesSection = () => {
         {services.map((service, idx) => (
           <div key={idx} className="col-md-4 mb-4">
             <Card className="h-100 shadow">
-              <Card.Img variant="top" src={service.image} alt={service.title} />
+              <Card.Img
+                variant="top"
+                src={service.image}
+                alt={service.title}
+                className="service-card-img"
+              />
               <Card.Body>
                 <Card.Title className="fw-bold">{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
@@ -112,4 +117,5 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+
 

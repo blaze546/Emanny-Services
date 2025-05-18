@@ -15,5 +15,11 @@
     border-color: #b37a26 !important;
   }
   
+  .service-card-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
   
   
